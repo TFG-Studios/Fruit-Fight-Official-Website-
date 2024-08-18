@@ -1,0 +1,126 @@
+body
+{
+	
+	background: linear-gradient(to right, dodgerblue 0%, deepskyblue 100%);
+	margin:0px;
+}
+
+.Head
+{
+	display:flex;
+	flex-direction: row;
+	background-color:white;
+	position: static;
+	top: 0;
+	left: 0;
+	height:67px;
+	width: 100%;
+	z-index:100;
+	
+}
+
+.developper-logo
+{
+	height: 100px;
+	width: 200px;
+	border-radius: 190px;
+
+	
+}
+.title
+{
+	margin: 0;
+	font-family:"Cairo",Arial;
+	font-size:40px;
+	text-align: right;
+	position:absolute;
+	right:100px;
+	top:200px;
+	line-height: 25px;
+	animation: Welcomeanim 1.5s ease-in-out;
+}
+
+.banana-photo
+{
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	left: 60px;
+	animation: Welcomeimageanim 1.5s ease-in-out;
+}
+
+@keyframes Welcomeanim
+{
+	0%
+	{
+		top:300px;
+		opacity:0;
+	}
+	100%
+	{
+		top:200px;
+		opacity:1;
+	}
+}
+@keyframes Welcomeimageanim
+{
+	0%
+	{
+		left:30px;
+		opacity:0;
+	}
+	100%
+	{
+		left:60px;
+		opacity:1;
+	}
+}
+
+.Logo-part
+{
+	font-family:"Kanit",Arial;
+	font-size: 30px;
+	height: 65px;
+	width: 400px;
+	padding-left:20px;
+	padding-top:8px;
+	
+}
+.About-button button
+{
+	font-family:"Cairo",Arial;
+	background-color:transparent;
+	height:100%;
+	width:190px;
+	border: none;
+	transition: opacity 0.5s,background-color ,0.25s,bottom 0.25s;
+}
+.About-button button:hover
+{
+	opacity:0.75;
+	cursor:pointer;
+	background-color:rgb(245,245,245);
+	transform:translateY(2px);
+}
+
+.download-button
+{
+	font-family:"Cairo",Arial;
+	font-size: 20px;
+	background-color:transparent;
+	height:100px;
+	width:500px;
+	border-radius: 50px;
+	border-style: double;
+	border-top-right-radius: 0px;
+	border-color: white;
+	transition:background-color ,0.25s,bottom 0.25s, font-size 0.25s,border-top-right-radius 0.25s;
+}
+
+.download-button:hover
+{
+	border-top-right-radius: 50px;
+	cursor:pointer;
+	background-color:rgb(245,245,245);
+	font-size: 17.5px;
+}
